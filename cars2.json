@@ -26,6 +26,27 @@
   "type" : "AllCoupeConvertible",
   "brand" : "AllBMW",
   "link" : "basicpage.html"
-} 
+},
+"5":{
+  "name" : "Mercedes EQC",
+  "img" : "/home/dima/Загрузки/eqc.jpg",
+  "type" : "AllCoupe",
+  "brand" : "AllMercedes",
+  "link" : "basicpage.html"
+},
+"6":{
+  "name" : "Audi e-tron",
+  "img" : "/home/dima/Загрузки/e-tron.jpg",
+  "type" : "AllCrossover",
+  "brand" : "AllAudi ",
+  "link" : "basicpage.html"
+},
+"7":{
+  "name" : "Audi e-tron GT",
+  "img" : "/home/dima/Загрузки/e-trongt.jpg",
+  "type" : "AllSedan",
+  "brand" : "AllAudi ",
+  "link" : "basicpage.html"
+}
 }
 
