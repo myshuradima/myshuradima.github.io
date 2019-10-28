@@ -3,7 +3,17 @@
   "Hello":"Hello world"
   },
 "1":{
-  "Hello":"Hello world1"
-  },
-"2":"Hello world 2"
+  "name" : "Tesla Model X",
+  "img" : "/home/dima/Загрузки/modelx.jpg",
+  "type" : "AllCrossover",
+  "brand" : "AllTesla",
+  "link" : "basicpage.html"
+},
+"2":{
+  "name" : "Tesla Model S",
+  "img" : "/home/dima/Загрузки/models.jpg",
+  "type" : "AllSedan",
+  "brand" : "AllTesla",
+  "link" : "basicpage.html"
+}
 }
