@@ -1,0 +1,72 @@
+{
+1:{
+  "name" : "Tesla Model X",
+  "img" : "/home/dima/Загрузки/modelx.jpg",
+  "type" : "AllCrossover",
+  "brand" : "AllTesla",
+  "link" : "basicpage.html",
+},
+2:{
+  "name" : "Tesla Model S",
+  "img" : "/home/dima/Загрузки/models.jpg",
+  "type" : "AllSedan",
+  "brand" : "AllTesla",
+  "link" : "basicpage.html"
+},
+3:{
+  "name" : "BMW i3",
+  "img" : "/home/dima/Загрузки/bmwi3.jpg",
+  "type" : "AllCoupe",
+  "brand" : "AllBMW ",
+  "link" : "basicpage.html"
+},
+4:{
+  "name" : "BMW i7",
+  "img" : "/home/dima/Загрузки/car.jpg",
+  "type" : "AllCoupeConvertible",
+  "brand" : "AllBMW",
+  "link" : "basicpage.html"
+},
+5:{
+  "name" : "Mercedes EQC",
+  "img" : "/home/dima/Загрузки/eqc.jpg",
+  "type" : "AllCoupe",
+  "brand" : "AllMercedes",
+  "link" : "basicpage.html"
+},
+6:{
+  "name" : "Audi e-tron",
+  "img" : "/home/dima/Загрузки/e-tron.jpg",
+  "type" : "AllCrossover",
+  "brand" : "AllAudi ",
+  "link" : "basicpage.html"
+},
+7:{
+  "name" : "Audi e-tron GT",
+  "img" : "/home/dima/Загрузки/e-trongt.jpg",
+  "type" : "AllSedan",
+  "brand" : "AllAudi ",
+  "link" : "basicpage.html"
+},
+8:{
+  "name" : "Nissan leaf",
+  "img" : "/home/dima/Загрузки/leaf.jpg",
+  "type" : "AllSedan",
+  "brand" : "AllNissan ",
+  "link" : "basicpage.html"
+},
+9:{
+  "name" : "Jaguar i-Pace",
+  "img" : "/home/dima/Загрузки/i-pace.jpg",
+  "type" : "AllSedan",
+  "brand" : "AllJaguar",
+  "link" : "basicpage.html"
+},
+10:{
+  "name" : "Tesla Model 3",
+  "img" : "/home/dima/Загрузки/model3.jpg",
+  "type" : "AllSedan",
+  "brand" : "AllTesla",
+  "link" : "basicpage.html"
+}
+};
