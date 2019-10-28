@@ -1,3 +1,5 @@
 {
-"word":"Hello"
+"word":{
+  "Hello":"Hello world"
+  }
 }
