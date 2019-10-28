@@ -47,6 +47,27 @@
   "type" : "AllSedan",
   "brand" : "AllAudi ",
   "link" : "basicpage.html"
+},
+"8":{
+  "name" : "Nissan leaf",
+  "img" : "/home/dima/Загрузки/leaf.jpg",
+  "type" : "AllSedan",
+  "brand" : "AllNissan ",
+  "link" : "basicpage.html"
+},
+"9":{
+  "name" : "Jaguar i-Pace",
+  "img" : "/home/dima/Загрузки/i-pace.jpg",
+  "type" : "AllSedan",
+  "brand" : "AllJaguar",
+  "link" : "basicpage.html"
+},
+"10":{
+  "name" : "Tesla Model 3",
+  "img" : "/home/dima/Загрузки/model3.jpg",
+  "type" : "AllSedan",
+  "brand" : "AllTesla",
+  "link" : "basicpage.html"
 }
 }
 
