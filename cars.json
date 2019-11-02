@@ -1,28 +1,28 @@
 {
 "1":{
   "name" : "Tesla Model X",
-  "img" : "modelx.jpg",
+  "img" : "https://raw.githubusercontent.com/myshuradima/myshuradima.github.io/master/imgs/modelx.png",
   "type" : "AllCrossover",
   "brand" : "AllTesla",
   "link" : "basicpage.html"
 },
 "2":{
   "name" : "Tesla Model S",
-  "img" : "models.jpg",
+  "img" : "https://raw.githubusercontent.com/myshuradima/myshuradima.github.io/master/imgs/models.png",
   "type" : "AllSedan",
   "brand" : "AllTesla",
   "link" : "basicpage.html"
 },
 "3":{
   "name" : "BMW i3",
-  "img" : "bmwi3.jpg",
+  "img" : "https://raw.githubusercontent.com/myshuradima/myshuradima.github.io/master/imgs/i3.jpg",
   "type" : "AllCoupe",
   "brand" : "AllBMW ",
   "link" : "basicpage.html"
 },
 "4":{
   "name" : "BMW i7",
-  "img" : "car.jpg",
+  "img" : "https://raw.githubusercontent.com/myshuradima/myshuradima.github.io/master/imgs/i8.jpg",
   "type" : "AllCoupeConvertible",
   "brand" : "AllBMW",
   "link" : "basicpage.html"
@@ -36,7 +36,7 @@
 },
 "6":{
   "name" : "Audi e-tron",
-  "img" : "etron.jpg",
+  "img" : "https://raw.githubusercontent.com/myshuradima/myshuradima.github.io/master/imgs/etron.jpg",
   "type" : "AllCrossover",
   "brand" : "AllAudi ",
   "link" : "basicpage.html"
