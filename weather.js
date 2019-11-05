@@ -12,7 +12,7 @@ class FlavorForm extends React.Component {
   }
 
   handleSubmit(event) {
-    alert('Ваш любимый вкус: ' + this.state.value);
+    alert('Your favorite flavor is: ' + this.state.value);
     event.preventDefault();
   }
 
@@ -20,20 +20,21 @@ class FlavorForm extends React.Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <label>
-          Выберите ваш любимый вкус:
+          Pick your favorite flavor:
           <select value={this.state.value} onChange={this.handleChange}>
-            <option value="grapefruit">Грейпфрут</option>
-            <option value="lime">Лайм</option>
-            <option value="coconut">Кокос</option>
-            <option value="mango">Манго</option>
+            <option value="grapefruit">Grapefruit</option>
+            <option value="lime">Lime</option>
+            <option value="coconut">Coconut</option>
+            <option value="mango">Mango</option>
           </select>
         </label>
-        <input type="submit" value="Отправить" />
+        <input type="submit" value="Submit" />
       </form>
     );
   }
 }
+
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
+  <FlavorForm />,
   document.getElementById('root')
 );
