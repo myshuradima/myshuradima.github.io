@@ -4,6 +4,19 @@ class App extends React.Component {
     this.state = {
       weatherData: null
     };
+    this.state = {value: 'Kyiv'};
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
+  handleSubmit(event) {
+    alert('Your favorite flavor is: ' + this.state.value);
+  }
   }
   componentDidMount() {
     const cityName = "Kyiv";
