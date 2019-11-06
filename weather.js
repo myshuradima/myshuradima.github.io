@@ -20,15 +20,15 @@ class FlavorForm extends React.Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <label>
-          Pick your favorite flavor:
+          Pick your city:
           <select value={this.state.value} onChange={this.handleChange}>
-            <option value="grapefruit">Grapefruit</option>
-            <option value="lime">Lime</option>
-            <option value="coconut">Coconut</option>
-            <option value="mango">Mango</option>
+            <option value="Kyiv">Kyiv</option>
+            <option value="London">London</option>
+            <option value="Paris">Paris</option>
+            <option value="Toronto">Toronto</option>
           </select>
         </label>
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Show" />
       </form>
     );
   }
