@@ -13,6 +13,19 @@ class FlavorForm extends React.Component {
 
   handleSubmit(event) {
     alert('Your favorite flavor is: ' + this.state.value);
+    function upload(){
+      var sel=document.getElementById('ct').options.selectedIndex;
+      city=document.getElementById('ct').options[sel].value;
+      var url = "http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=b1b35bba8b434a28a0be2a3e1071ae5b&units=metric"
+      var request = new XMLHttpRequest();
+      request.open('GET', url);
+      request.responseType = 'json';
+      request.send();
+      request.onload = function(){
+        var weather = request.response;
+        console.log(weather);
+        }
+    }
     event.preventDefault();
   }
 
@@ -20,15 +33,15 @@ class FlavorForm extends React.Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <label>
-          Pick your city:
-          <select value={this.state.value} onChange={this.handleChange}>
-            <option value="Kyiv">Kyiv</option>
-            <option value="London">London</option>
-            <option value="Paris">Paris</option>
-            <option value="Toronto">Toronto</option>
+          Pick your favorite flavor:
+          <select value={this.state.value} id="ct" onChange={this.handleChange}>
+            <option value="grapefruit">Grapefruit</option>
+            <option value="lime">Lime</option>
+            <option value="coconut">Coconut</option>
+            <option value="mango">Mango</option>
           </select>
         </label>
-        <input type="submit" value="Show" />
+        <input type="submit" value="Submit" />
       </form>
     );
   }
