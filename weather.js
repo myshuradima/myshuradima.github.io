@@ -17,7 +17,6 @@ class App extends React.Component {
   handleSubmit(event) {
     alert('Your favorite flavor is: ' + this.state.value);
   }
-  }
   componentDidMount() {
     const cityName = "Kyiv";
     const URL = "http://api.openweathermap.org/data/2.5/weather?q=" +
