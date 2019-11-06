@@ -33,10 +33,10 @@ class App extends React.Component {
     const iconUrl = "http://openweathermap.org/img/w/" + weather.icon + ".png";
     return (
       <div>
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <label>
           Pick your favorite flavor:
-          <select>
+          <select value={this.state.value} id="ct" onChange={this.handleChange}>
             <option value="Kyiv">Kyiv</option>
             <option value="London">London</option>
             <option value="Paris">Paris</option>
