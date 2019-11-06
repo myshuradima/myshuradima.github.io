@@ -1,7 +1,7 @@
 class FlavorForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {value: 'coconut'};
+    this.state = {value: 'Kyiv'};
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -35,10 +35,10 @@ class FlavorForm extends React.Component {
         <label>
           Pick your favorite flavor:
           <select value={this.state.value} id="ct" onChange={this.handleChange}>
-            <option value="grapefruit">Grapefruit</option>
-            <option value="lime">Lime</option>
-            <option value="coconut">Coconut</option>
-            <option value="mango">Mango</option>
+            <option value="Kyiv">Kyiv</option>
+            <option value="London">London</option>
+            <option value="Paris">Paris</option>
+            <option value="Toronto">Toronto</option>
           </select>
         </label>
         <input type="submit" value="Submit" />
