@@ -6,41 +6,29 @@ class App extends React.Component {
   };
 
   fetchUsers() {
-    fetch(`https://jsonplaceholder.typicode.com/users`)
-      .then(response => response.json())
-      .then(data =>
-        this.setState({
-          users: data,
-          isLoading: false,
-        })
-      )
-      .catch(error => this.setState({ error, isLoading: false }));
-  }
-
-  componentDidMount() {
-    this.fetchUsers();
+    fetch("http://api.openweathermap.org/data/2.5/weather?q=Kyiv&appid=b1b35bba8b434a28a0be2a3e1071ae5b&units=metric")
+      .then(res => res.json()).then(json => {
+      this.setState({ weatherData: json });
+    });
   }
   render() {
-    const { isLoading, users, error } = this.state;
+    const weatherData = this.state.weatherData;
+    if (!weatherData) return <div>Loading</div>;
+    const weather = weatherData.weather[0];
+    const iconUrl = "http://openweathermap.org/img/w/" + weather.icon + ".png";
     return (
-      <React.Fragment>
-        <h1>Random User</h1>
-        {error ? <p>{error.message}</p> : null}
-        {!isLoading ? (
-          users.map(user => {
-            const { username, name, email } = user;
-            return (
-              <div key={username}>
-                <p>Name: {name}</p>
-                <p>Email Address: {email}</p>
-                <hr />
-              </div>
-            );
-          })
-        ) : (
-          <h3>Loading...</h3>
-        )}
-      </React.Fragment>
+      <div>
+        <h1>
+          {weather.main} in {weatherData.name}
+          <img src={iconUrl} alt={weatherData.description} />
+        </h1>
+        <p>Текущая: {weatherData.main.temp}°</p>
+        <p>Максимальная: {weatherData.main.temp_max}°</p>
+        <p>Минимальная: {weatherData.main.temp_min}°</p>
+        <p>Скорость ветра: {weatherData.wind.speed} м/с</p>
+        <p>Влажность: {weatherData.main.humidity} %</p>
+        <p>Давление: {weatherData.main.pressure} гПа</p>
+      </div>
     );
   }
 }
