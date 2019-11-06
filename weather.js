@@ -20,10 +20,11 @@ class App extends React.Component {
     const weather = weatherData.weather[0];
     const iconUrl = "http://openweathermap.org/img/w/" + weather.icon + ".png";
     return (
-        <form onSubmit={this.handleSubmit}>
+      <div>
+      <form>
         <label>
           Pick your favorite flavor:
-          <select value={this.state.value} id="ct" onChange={this.handleChange}>
+          <select>
             <option value="Kyiv">Kyiv</option>
             <option value="London">London</option>
             <option value="Paris">Paris</option>
@@ -32,7 +33,6 @@ class App extends React.Component {
         </label>
         <input type="submit" value="Submit" />
       </form>
-      <div>
         <h1>
           {weather.main} in {weatherData.name}
           <img src={iconUrl} alt={weatherData.description} />
