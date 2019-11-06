@@ -1,47 +1,49 @@
-class FlavorForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {value: 'Kyiv'};
+class App extends React.Component {
+  state = {
+    isLoading: true,
+    users: [],
+    error: null
+  };
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+  fetchUsers() {
+    fetch(`https://jsonplaceholder.typicode.com/users`)
+      .then(response => response.json())
+      .then(data =>
+        this.setState({
+          users: data,
+          isLoading: false,
+        })
+      )
+      .catch(error => this.setState({ error, isLoading: false }));
   }
 
-  handleChange(event) {
-    this.setState({value: event.target.value});
+  componentDidMount() {
+    this.fetchUsers();
   }
-
-  handleSubmit(event) {
-    alert('Your favorite flavor is: ' + this.state.value);
-    const cityName = "Kyiv";
-    const URL = "http://api.openweathermap.org/data/2.5/weather?q=" +
-      cityName +
-      "&appid=b1b35bba8b434a28a0be2a3e1071ae5b&units=metric";
-    fetch(URL).then(res => res.json()).then(json => {
-      this.setState({ weatherData: json });
-    });
-    console.log(weatherData);
-  }
-
   render() {
+    const { isLoading, users, error } = this.state;
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label>
-          Pick your favorite flavor:
-          <select value={this.state.value} id="ct" onChange={this.handleChange}>
-            <option value="Kyiv">Kyiv</option>
-            <option value="London">London</option>
-            <option value="Paris">Paris</option>
-            <option value="Toronto">Toronto</option>
-          </select>
-        </label>
-        <input type="submit" value="Submit" />
-      </form>
+      <React.Fragment>
+        <h1>Random User</h1>
+        {error ? <p>{error.message}</p> : null}
+        {!isLoading ? (
+          users.map(user => {
+            const { username, name, email } = user;
+            return (
+              <div key={username}>
+                <p>Name: {name}</p>
+                <p>Email Address: {email}</p>
+                <hr />
+              </div>
+            );
+          })
+        ) : (
+          <h3>Loading...</h3>
+        )}
+      </React.Fragment>
     );
   }
 }
 
-ReactDOM.render(
-  <FlavorForm />,
-  document.getElementById('root')
-);
+
+ReactDOM.render(<App />, document.getElementById("root"));
