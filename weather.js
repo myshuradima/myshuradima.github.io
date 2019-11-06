@@ -14,7 +14,7 @@ class App extends React.Component {
     this.setState({value: event.target.value});
   }
 
-  handleSubmit(event) {
+  handleSubmit() {
     alert('Your favorite flavor is: ' + this.state.value);
   }
   componentDidMount() {
@@ -42,7 +42,7 @@ class App extends React.Component {
             <option value="Toronto">Toronto</option>
           </select>
         </label>
-        <input type="submit" value="Submit" />
+        <button onClick={this.handleSubmit}>Press me</button>
         <h1>
           {weather.main} in {weatherData.name}
           <img src={iconUrl} alt={weatherData.description} />
