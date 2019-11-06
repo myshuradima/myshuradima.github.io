@@ -13,10 +13,10 @@ class FlavorForm extends React.Component {
 
   handleSubmit(event) {
     alert('Your favorite flavor is: ' + this.state.value);
-    function upload(){
-      var sel=document.getElementById('ct').options.selectedIndex;
-      city=document.getElementById('ct').options[sel].value;
-      var url = "http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=b1b35bba8b434a28a0be2a3e1071ae5b&units=metric"
+      //var sel=document.getElementById('ct').options.selectedIndex;
+      //city=document.getElementById('ct').options[sel].value;
+      city="Kyiv";
+      var url = "http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=b1b35bba8b434a28a0be2a3e1071ae5b&units=metric";
       var request = new XMLHttpRequest();
       request.open('GET', url);
       request.responseType = 'json';
@@ -25,7 +25,6 @@ class FlavorForm extends React.Component {
         var weather = request.response;
         console.log(weather);
         }
-    }
     event.preventDefault();
   }
 
