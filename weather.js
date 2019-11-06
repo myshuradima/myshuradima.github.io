@@ -13,7 +13,7 @@ class FlavorForm extends React.Component {
 
   handleSubmit(event) {
     alert('Your favorite flavor is: ' + this.state.value);
-    const cityName = this.props.cityName;
+    const cityName = "Kyiv";
     const URL = "http://api.openweathermap.org/data/2.5/weather?q=" +
       cityName +
       "&appid=b1b35bba8b434a28a0be2a3e1071ae5b&units=metric";
