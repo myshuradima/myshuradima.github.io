@@ -18,7 +18,8 @@ class App extends React.Component {
     alert('Your favorite flavor is: ' + this.state.value);
   }
   componentDidMount() {
-    const cityName = "Kyiv";
+    const cityName = this.state.value;
+    //const cityName = "Kyiv";
     const URL = "http://api.openweathermap.org/data/2.5/weather?q=" +
       cityName +
       "&appid=b1b35bba8b434a28a0be2a3e1071ae5b&units=metric";
