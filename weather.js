@@ -43,7 +43,7 @@ class App extends React.Component {
             <option value="Toronto">Toronto</option>
           </select>
         </label>
-        <button onClick={this.componentDidMount}>Press me</button>
+        <button onClick={this.handleSubmit}>Press me</button>
         <h1>
           {weather.main} in {weatherData.name}
           <img src={iconUrl} alt={weatherData.description} />
