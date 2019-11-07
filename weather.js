@@ -8,6 +8,7 @@ class App extends React.Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.componentDidMount = this.componentDidMount.bind(this);
   }
 
   handleChange(event) {
