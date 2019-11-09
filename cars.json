@@ -29,7 +29,7 @@
 },
 "5":{
   "name" : "Mercedes EQC",
-  "img" : "eqc.jpg",
+  "img" : "https://raw.githubusercontent.com/myshuradima/myshuradima.github.io/master/imgs/eqc.jpg",
   "type" : "AllCoupe",
   "brand" : "AllMercedes",
   "link" : "basicpage.html"
@@ -43,28 +43,28 @@
 },
 "7":{
   "name" : "Audi e-tron GT",
-  "img" : "e-trongt.jpg",
+  "img" : "https://raw.githubusercontent.com/myshuradima/myshuradima.github.io/master/imgs/etrongt.jpg",
   "type" : "AllSedan",
   "brand" : "AllAudi ",
   "link" : "basicpage.html"
 },
 "8":{
   "name" : "Nissan leaf",
-  "img" : "leaf.jpg",
+  "img" : "https://raw.githubusercontent.com/myshuradima/myshuradima.github.io/master/imgs/leaf.jpg",
   "type" : "AllSedan",
   "brand" : "AllNissan ",
   "link" : "basicpage.html"
 },
 "9":{
   "name" : "Jaguar i-Pace",
-  "img" : "i-pace.jpg",
+  "img" : "https://raw.githubusercontent.com/myshuradima/myshuradima.github.io/master/imgs/ipace.jpg",
   "type" : "AllSedan",
   "brand" : "AllJaguar",
   "link" : "basicpage.html"
 },
 "10":{
   "name" : "Tesla Model 3",
-  "img" : "model3.jpg",
+  "img" : "https://raw.githubusercontent.com/myshuradima/myshuradima.github.io/master/imgs/model3.jpg",
   "type" : "AllSedan",
   "brand" : "AllTesla",
   "link" : "basicpage.html"
