@@ -4,14 +4,14 @@
   "img" : "https://raw.githubusercontent.com/myshuradima/myshuradima.github.io/master/imgs/modelx.png",
   "type" : "AllCrossover",
   "brand" : "AllTesla",
-  "link" : "basicpage.html"
+  "link" : "modelx.php"
 },
 "2":{
   "name" : "Tesla Model S",
   "img" : "https://raw.githubusercontent.com/myshuradima/myshuradima.github.io/master/imgs/models.jpg",
   "type" : "AllSedan",
   "brand" : "AllTesla",
-  "link" : "basicpage.html"
+  "link" : "models.php"
 },
 "3":{
   "name" : "BMW i3",
